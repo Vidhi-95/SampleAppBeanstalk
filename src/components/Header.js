@@ -7,14 +7,14 @@ class Header extends Component {
         super()
 
         this.state={
-            title:'React App With BeanStalk',
-            userInput:'User text Here'
+            title:'Reboot Rx App',
+            userInput:'Search for Population here'
         }
         
     }
 
     inputChange(event){
-        this.setState({userInput:event.target.value?event.target.value:'User text Here'})
+        this.setState({userInput:event.target.value?event.target.value:'Search text here'})
         this.props.newsSearch(event.target.value)
     }
 
@@ -25,7 +25,6 @@ class Header extends Component {
                 onClick={()=>{console.log('header clicked')}}>
 
                 {this.state.title}
-
                 </div>
                 <center>
                     <input onChange={this.inputChange.bind(this)}/>

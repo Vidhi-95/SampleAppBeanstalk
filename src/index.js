@@ -18,7 +18,7 @@ class App extends Component {
     }
     filterNews(keyword){
         const output = this.state.news.filter((data)=>{
-            return data.title.indexOf(keyword)> -1;
+            return data.Population.indexOf(keyword)> -1;
         })
 
         this.setState({filtered:output})

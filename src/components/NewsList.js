@@ -6,10 +6,15 @@ const NewsList = (props) => {
     const output= props.datalist.map((item)=>{
         return(
             <div key={item.id}>
-                <h3>Title: {item.title}</h3>
+                <h4>PMID: {item.PMID}</h4>
+                <h4>Title: {item.Title}</h4>
                 <div>
-                   Feed: {item.feed}
+                   Abstract: {item.Abstract}
                 </div>
+                <h4>Population: {item.Population}</h4>
+                <h4>Intervention: {item.Intervention}</h4>
+                <h4>Outcome: {item.Outcome}</h4>
+                <h4>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>
             </div>
         )
     })
