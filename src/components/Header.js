@@ -14,7 +14,7 @@ class Header extends Component {
     }
 
     inputChange(event){
-        this.setState({userInput:event.target.value?event.target.value:'Search text here'})
+        this.setState({userInput:event.target.value?event.target.value:'Search for Population here'})
         this.props.newsSearch(event.target.value)
     }
 
