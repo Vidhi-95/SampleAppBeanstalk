@@ -1,26 +1,19 @@
 version: 0.2
 
-env:
-  variables:
-    NODE_ENV: "development"
-
 phases:
   install:
     runtime-versions:
-      nodejs: 10
-    commands:
-      - npm install -g jest
-      - npm install -g gatsby
-
+      nodejs: 12
+  
   pre_build:
     commands:
       - npm install
-
   build:
     commands:
-      - gatsby build
-      - npm run test:ci
-
+      - npm run build
 cache:
   paths:
     - './node_modules/**/*'
+artifacts:
+  files:
+    - '**/*'
