@@ -7,7 +7,7 @@ class Header extends Component {
         super()
 
         this.state={
-            title:'Reboot Rx App',
+            title:'Welcome to Reboot Rx App',
             userInput:'Search for Population here'
         }
         
