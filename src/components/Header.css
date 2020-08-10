@@ -1,7 +1,28 @@
 header{
-    background:slateblue;
+    background:#155CA4;
 }
 p{
     text-align: center;
     color: #fff
+}
+
+.SearchBar{
+    height: 35px;
+    width: 650px;
+    margin-bottom: 25px;
+}
+
+.logo{
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+}
+
+img{
+    height: 80px;
+    width: 280px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    margin-left: 20px;
+    font-weight: bold;
 }

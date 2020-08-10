@@ -1,0 +1,71 @@
+.Border{
+    font-family: arial, sans-serif;
+    border: 1px solid;
+    margin: 1%;
+}
+.Inner-Div{
+    margin: 1%;
+}
+.PMID{
+    font-weight: bold;
+}
+.Right-Aligned{
+    text-align: right; 
+    right: 0px; 
+   float: right;
+   color: lightslategray;
+   font-weight: normal;
+   
+}
+.Title{
+    font-size: large;
+}
+.Citation{
+   font-weight: normal;
+   color: blue;
+   margin-top: -10px;
+   
+}
+.Authors{
+    font-weight: normal;
+    color: #666666;
+}
+.IncludeStatus{
+    right: 0px;
+    float: right;
+}
+.Study-Type{
+    margin-left: 50%;
+}
+
+.box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    /* //border: 2px solid green; */
+  }
+  .box div {
+    width: 23%;
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+    font-family: arial, sans-serif;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  .green {
+    background-color: #155CA4;
+  }
+  .blue {
+    background-color: lightsalmon;
+  }
+  .gray {
+    background-color: #155CA4;
+  }
+  .pink {
+    background-color: lightsalmon;
+  }

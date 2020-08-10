@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css';
+import './NewsList.js';
 
 class Header extends Component {
     
@@ -7,29 +8,32 @@ class Header extends Component {
         super()
 
         this.state={
-            title:'Reboot Rx App',
-            userInput:'Search for Population here'
+            title:'Reboot Rx',
+            userInput:''
         }
         
     }
 
     inputChange(event){
-        this.setState({userInput:event.target.value?event.target.value:'Search for Population here'})
+        this.setState({userInput:event.target.value?event.target.value:''})
         this.props.newsSearch(event.target.value)
+        
     }
 
     render(){
         return(
             <header>
-                <div className="logo"
+                <img src = "/images/Original.png" alt=""/>
+                {/* <div className="logo"
                 onClick={()=>{console.log('header clicked')}}>
 
                 {this.state.title}
-                </div>
+                </div> */}
                 <center>
-                    <input onChange={this.inputChange.bind(this)}/>
+                    <input className = "SearchBar" placeholder="Enter Drug name for e.g. Chloroquine or Losartan" onChange={this.inputChange.bind(this)}/>
                 </center>
-                <p>{this.state.userInput}</p>
+                <p>You searched for "{this.state.userInput}"</p>
+            
             </header>
         )
     }
